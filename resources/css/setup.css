@@ -1,0 +1,67 @@
+* {
+    font-family: CMS, Arial, Calibri, Ubuntu, Roboto, Liberation Sans, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("/resources/image/config.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: initial;
+}
+
+.box {
+    width: 60% !important;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(235, 235, 235);
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+.loader {
+    width: 20%;
+    height: 20%;
+}
+
+.tip-red {
+    color: rgb(255, 75, 75);
+}
+
+.tip-green {
+    color: rgb(132, 255, 75);
+}
+
+.tip-orange {
+    color: rgb(255, 132, 75);
+}
+
+.termsbox {
+    /* margin: 10px; */
+    border: none;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 2px black;
+}
+
+@keyframes blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.loadblink {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.finisher {
+    width: 30%;
+    height: 30%;
+}

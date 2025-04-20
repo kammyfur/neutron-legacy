@@ -1,0 +1,7 @@
+{
+    "MPCMSLibrary": {
+        "LibraryName": "pushbar.js",
+        "LibraryUsage": "Show pushbar buttons on mobile instead of panels",
+        "LibraryAuthor": "oncebot"
+    }
+}

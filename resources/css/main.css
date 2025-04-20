@@ -1,0 +1,266 @@
+* {
+    font-family: CMS, Arial, Calibri, Ubuntu, Roboto, Liberation Sans, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#siteadmin {
+    background: black;
+    color: white;
+    padding: 4px;
+    font-size: 10px;
+    height: 12px;
+}
+
+#siteadmin-button {
+    float: right;
+    cursor: pointer;
+    background: transparent;
+    transition: background 100ms;
+    margin: -4px;
+    padding: 4px;
+    padding-bottom: 0;
+    color: white;
+    text-decoration: none;
+}
+
+#siteadmin-button:hover {
+    background: rgb(41, 41, 41);
+}
+
+#siteadmin-img {
+    filter: invert(100%);
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+#banner {
+    padding: 40px 50px;
+    background-position: center;
+    background-size: 100%;
+    padding-top: 101px;
+}
+
+#banner-menu {
+    padding: 20px 50px;
+    background-position: center;
+    background-size: 100%;
+}
+
+@media (max-width: 500px) {
+    .branding-mobile {
+        display: initial;
+    }
+    .branding-desktop {
+        display: none;
+    }
+    #banner {
+        padding: 20px 25px;
+        padding-top: 81px;
+    }
+    .menubar-link-text {
+        display: none;
+    }
+    #banner-logo {
+        width: 36px !important;
+        height: 36px !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .branding-mobile {
+        display: none;
+    }
+    .branding-desktop {
+        display: initial;
+    }
+}
+
+#banner-name {
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+#banner-menu-name {
+    font-weight: lighter;
+    font-size: 14px;
+    color: white;
+    margin-top: 15px;
+}
+
+.banner-black {
+    color: black !important;
+}
+
+#banner-logo {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 999px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#banner-menu-logo {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 999px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#always-on-top {
+    position: fixed;
+    width: 100%;
+}
+
+#menubar {
+    padding: 10px 20px;
+    background: rgb(66, 66, 66)
+}
+
+.menubar-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menubar-img {
+    filter: invert(100%);
+    vertical-align: middle;
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#menubar-link-tools {
+    float: right;
+}
+
+#menubar-close {
+    filter: invert(100%);
+    top: 0;
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    padding: 5px;
+}
+
+#sidebar-close {
+    top: 0;
+    position: fixed;
+    cursor: pointer;
+    left: 0;
+    padding: 5px;
+}
+
+#sidebar-title {
+    top: 7.5px;
+    position: fixed;
+    right: 30%;
+    font-weight: bold;
+}
+
+#sidebar-separator {
+    margin-top: 7.5px;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: fixed;
+    top: 25px;
+    width: 100%;
+}
+
+#sidebar-widgets {
+    top: 32px;
+    position: relative;
+}
+
+.menu-link {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    color: black;
+}
+
+.menu-link:hover {
+    color: rgb(77, 77, 77);
+}
+
+.pushbar {
+    overflow-x: hidden;
+}
+
+#page-content {
+    padding: 8px;
+    background: white;
+}
+
+#page-content h1 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #a4a4a4;
+}
+
+#page-content h2 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #a4a4a4;
+}
+
+#page-placeholder, body {
+    background: rgb(34, 34, 34);
+}
+
+#page-footer {
+    color: white;
+    padding: 20px;
+}
+
+#widget-space {
+    border-bottom-color: rgb(179, 179, 179);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 10px;
+}
+
+#widget-space h1, #widget-space h2, #widget-space h3, #widget-space h4, #widget-space h5, #widget-space h6 {
+    margin-top: 0;
+}
+
+#galery_thumbnails {
+    margin: 0% 15%;
+}
+
+.photo {
+    width: 30%;
+    margin: 10px;
+    background: #c8c8c8;
+    padding: 5px;
+    box-shadow: #c8c8c8 1px 1px 12px;
+    display: inline-block;
+}
+
+.photo_image {
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 90%;
+}

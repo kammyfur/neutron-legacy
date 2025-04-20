@@ -1,0 +1,11 @@
+#
+# Directives htaccess officielles de MPCMS
+#
+# Modifier ce fichier peut causer des erreurs lors du chargement d'une page.
+# Ces directives seront détaillées
+
+# Messages d'erreur
+ErrorDocument 401 /cms-special/error/?id=401&description=Accès%20refusé
+ErrorDocument 403 /cms-special/error/?id=403&description=Accès%20interdit
+ErrorDocument 403 /cms-special/error/?id=404&description=Ressource%20introuvable
+ErrorDocument 500 /cms-special/error/?id=500&description=Erreur%20interne

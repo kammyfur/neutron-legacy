@@ -1,0 +1,347 @@
+* {
+    font-family: CMS, Arial, Calibri, Ubuntu, Roboto, Liberation Sans, Helvetica, sans-serif;
+}
+
+@keyframes blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blk1 {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+
+.blk2 {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
+}
+
+.blk3 {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-delay: 800ms;
+    animation-iteration-count: infinite;
+}
+
+.blk4 {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-delay: 1200ms;
+    animation-iteration-count: infinite;
+}
+
+.blk5 {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-delay: 1600ms;
+    animation-iteration-count: infinite;
+}
+
+.intro-element {
+    width: 36px;
+    height: 36px;
+}
+
+.intro {
+    vertical-align: middle;
+}
+
+#error {
+    background: rgb(255, 65, 65);
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    box-shadow: 1px 1px 12px rgb(255, 65, 65);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.setting {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 200ms;
+    left: 0;
+    position: relative;
+}
+
+.setting:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.setting:hover > table > tbody > tr > td > .setting-img {
+    width: 36px;
+    height: 36px;
+    margin-right: 0;
+    transition: width 200ms, height 200ms, margin-right 200ms;
+}
+
+.setting-img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 4px;
+    transition: width 200ms, height 200ms, margin-right 200ms;
+}
+
+.setting-name {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#settings > a {
+    color: black;
+    text-decoration: none;
+}
+
+.place-bar {
+    margin-left: 10px;
+}
+
+.sblink {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sblink:hover {
+    color: black;
+    text-decoration-color: black;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+}
+
+.sblink:active {
+    color: rgb(65, 65, 65);
+    text-decoration-color: rgb(65, 65, 65);
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+}
+
+.tip-red {
+    color: rgb(255, 75, 75);
+}
+
+.tip-green {
+    color: rgb(132, 255, 75);
+}
+
+.tip-orange {
+    color: rgb(255, 132, 75);
+}
+
+.loader {
+    width: 20%;
+    height: 20%;
+}
+
+#pages-list {
+    margin: 10px;
+}
+
+#pages-list > tbody > tr > td, #pages-list > tbody {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px 10px;
+}
+
+.pages-list-header {
+    font-weight: bold;
+}
+
+#codeeditor {
+    width: 100%;
+    height: 150px;
+    font-family: 'Ubuntu Mono', 'Roboto Mono', 'Liberation Mono', 'Monospace', 'Courier New', 'Courier', 'Lucida Console', monospace;
+    font-size: 12px;
+}
+
+.reset-option {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+    max-width: 80%;
+    cursor: pointer;
+    background: transparent;
+}
+
+.widget {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+    max-width: 80%;
+    background: transparent;
+}
+
+.reset-option:hover {
+    background: rgb(219, 219, 219);
+}
+
+.reset-option:active {
+    background: rgb(177, 177, 177);
+}
+
+#resetbox-placeholder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .75)
+}
+
+#settings.blurred {
+    filter: blur(5px);
+}
+
+#resetbox {
+    width: 60% !important;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(235, 235, 235);
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+}
+
+.widget-header {
+    margin: -10px;
+    padding: 10px;
+    background: rgb(209, 209, 209);
+    transition: background 200ms;
+}
+
+.widget-header.disabled {
+    background: #ff7373;
+    transition: background 200ms;
+}
+
+.widget-header.enabled {
+    background: #9bff73;
+    transition: background 200ms;
+}
+
+.chart--container {
+    height: 450px;
+    width: 100%;
+    min-height: 150px;
+}
+
+#visits {
+    overflow: hidden;
+    position: relative;
+    top: -80px;
+    z-index: -1;
+}
+
+#afterchart {
+    position: relative;
+    top: -90px;
+}
+
+#logs {
+    font-family: monospace;
+    font-size: 16px;
+    margin: 0px 20px;
+    padding: 10px;
+    background: lightgray;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#protect {
+    margin: 0px 20%;
+    text-align: center;
+    padding: 10px;
+    background: rgb(224, 224, 224);
+    border-radius: 5px;
+}
+
+#protect.s2 {
+    background: rgb(135, 255, 135);
+}
+
+#protect.s1 {
+    background: rgb(255, 189, 135);
+}
+
+#protect.s0 {
+    background: rgb(255, 135, 135);
+}
+
+#banner {
+    padding: 40px 50px;
+    background-position: center;
+    background-size: 100%;
+}
+
+@media (max-width: 500px) {
+    #banner {
+        padding: 20px 25px;
+    }
+    #banner-logo {
+        width: 36px !important;
+        height: 36px !important;
+    }
+}
+
+#banner-name {
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.banner-black {
+    color: black !important;
+}
+
+#banner-logo {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 999px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#adminb {
+    text-align: center;
+    color: white;
+}
+
+.setting-info {
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    opacity: 0;
+    display: inline-block;
+    transition: position 200ms, height 200ms, width 200ms, opacity 200ms;
+    text-align: center;
+}
+
+.setting:hover > span.setting-info {
+    position: initial;
+    height: auto;
+    opacity: 1;
+}

@@ -1,0 +1,92 @@
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: rgb(39, 39, 39);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(65, 65, 65);
+    transition: border-width 100ms cubic-bezier(.17,.67,.83,.67);
+    box-shadow: 1px 1px 5px rgb(65, 65, 65);
+}
+
+.button-dangerous {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: rgb(182, 19, 19);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(173, 56, 56);
+    transition: border-width 100ms cubic-bezier(.17,.67,.83,.67);
+    box-shadow: 1px 1px 5px rgb(173, 56, 56);
+}
+
+.button:hover, .button-dangerous:hover {
+    border-width: 3px;
+}
+
+.icon_button {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 999px;
+    box-shadow: none;
+    transition: box-shadow 200ms;
+}
+
+.icon_button:hover {
+    box-shadow: 1px 1px 10px rgb(168, 168, 168);
+}
+
+.hide {
+    display: none;
+}
+
+input[type="text"], input[type="password"] {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: rgb(75, 75, 75);
+}
+
+button.button {
+    font-size: 16px;
+}
+
+input[type="button"].button {
+    font-size: 16px;
+}
+
+input[type="submit"].button {
+    font-size: 16px;
+}
+
+center {
+    text-align: center;
+}
+
+.php-internal-error {
+    display: block;
+    margin: -8px;
+    padding: 14px;
+    text-align: center;
+    background: red;
+    color: white;
+}
+
+code {
+    font-family: monospace;
+    font-size: 14px;
+}

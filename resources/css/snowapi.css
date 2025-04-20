@@ -1,0 +1,96 @@
+body, html {
+    min-height: 100%;
+    /* Only required if you don't have a Background : */
+    /* background-image: url('/resources/image/config.jpg');
+    background-size: cover;
+    background-position: center; */
+    /* ------------------ */
+}
+
+div#snowapi-placeholder {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #6a0000;
+}
+
+[snowapi-enable-snowfall=""] {
+    position: absolute;
+    left: -100px;
+    right: -100px;
+    animation: SnowAPI_Wind 5s cubic-bezier(.56,.02,.47,1.01) infinite alternate;
+    perspective: 100px;
+    z-index: -1;
+}
+
+[snowapi-enable-snowfall=""]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2000px;
+    background: url('/api/snow-medium.png');
+    animation: SnowAPI_Snowfall 10s linear infinite;
+    transform: translateZ(50px);
+    z-index: -1;
+}
+
+@keyframes SnowAPI_Snowfall {
+    from {
+        transform: translateY(-1000px) translateZ(50px);
+    }
+}
+
+@keyframes SnowAPI_Wind {
+    to {
+        transform: translateX(50px);
+    }
+}
+
+#page-content, #page-placeholder, body {
+    background: transparent;
+}
+
+#page-content {
+    color: white;
+}
+
+#page-footer {
+    color: #d0d0d0;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    border-top-color: #aeaeae;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+#banner {
+    opacity: .75;
+}
+
+#always-on-top {
+    opacity: .8;
+    z-index: 999;
+}
+
+#menubar {
+    background: rgb(0, 60, 4);
+}
+
+#siteadmin {
+    background: rgb(0, 30, 2);
+}
+
+.branding-desktop::before {
+    content: "Joyeux Noël à tous nos visiteurs | ";
+}
+
+.branding-mobile::before {
+    content: "Joyeux Noël | ";
+}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: CMS;
+    src: url('/resources/fonts/font-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CMS;
+    src: url('/resources/fonts/font-italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: CMS;
+    src: url('/resources/fonts/font-bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CMS;
+    src: url('/resources/fonts/font-bold-italic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}

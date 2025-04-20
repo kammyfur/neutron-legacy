@@ -1,0 +1,15 @@
+* {
+    font-family: CMS, Arial, Calibri, Ubuntu, Roboto, Liberation Sans, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("/resources/image/ready.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: initial;
+}
+
+.discover {
+    color: white;
+    max-width: 40%;
+}
